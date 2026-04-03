@@ -1,0 +1,5 @@
+# Analyse YAML (requis)
+pyyaml>=6.0
+
+# Interface web locale avec drag & drop (optionnel, uniquement pour serve.py)
+flask>=3.0
