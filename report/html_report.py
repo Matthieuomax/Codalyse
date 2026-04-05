@@ -343,7 +343,7 @@ body {{
 
 .score-center {{
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -707,7 +707,6 @@ body {{
         <canvas id="gaugeChart"></canvas>
         <div class="score-center">
           <div class="score-number">{self.score}</div>
-          <div class="score-grade">{self.grade}</div>
         </div>
       </div>
       <div class="score-meta">
