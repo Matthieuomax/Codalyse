@@ -654,7 +654,7 @@ body {{
       <span>📊</span> Tableau de bord
     </a>
     <a class="nav-item" onclick="showSection('issues')">
-      <span>⚠️</span> Problèmes
+      <span>⚠️</span> Observations
       <span class="nav-badge{' crit' if n_critical > 0 else ''}">{n_issues}</span>
     </a>
     <a class="nav-item" onclick="showSection('files')">
@@ -692,7 +692,7 @@ body {{
     <span class="topbar-project"><span style="color:var(--accent);font-weight:800;margin-right:6px">Codalyse</span>{html.escape(str(self.root))}</span>
     <div class="topbar-meta">
       <span>🗂️ {n_files} fichiers</span>
-      <span>⚠️ {n_issues} problèmes</span>
+      <span>⚠️ {n_issues} observations</span>
       <span>🕒 {now}</span>
     </div>
   </div>
@@ -711,7 +711,7 @@ body {{
       </div>
       <div class="score-meta">
         <h2>Score de qualité : <span style="color:{grade_color}">{self.score}/100 — {self.grade}</span></h2>
-        <p>Analysé sur <strong>{n_files} fichiers</strong> — <strong>{n_issues} problèmes</strong> détectés.<br>
+        <p>Analysé sur <strong>{n_files} fichiers</strong> — <strong>{n_issues} observations</strong> détectés.<br>
         {self._score_comment(self.score)}</p>
       </div>
     </div>
@@ -1110,7 +1110,7 @@ renderPage();
 
         return f"""
         <div class="card">
-          <div class="card-title" style="margin-bottom:14px">Top fichiers — Problèmes détectés</div>
+          <div class="card-title" style="margin-bottom:14px">Top fichiers — Observations détectés</div>
           <div style="overflow:auto;">
             <table class="file-summary-table">
               <thead><tr><th>Fichier</th><th>🔴</th><th>🟡</th><th>🔵</th><th>Total</th></tr></thead>
